@@ -20,11 +20,11 @@ public class OrdenarMain {
         OrdenarClasse oc = new OrdenarClasse();
         CircularArrayQueue<Integer> c1 = new CircularArrayQueue();
         c1.enqueue(1);
+        c1.enqueue(2);
         c1.enqueue(3);
-        c1.enqueue(5);
         CircularArrayQueue<Integer> c2 = new CircularArrayQueue();
-        c2.enqueue(2);
         c2.enqueue(4);
+        c2.enqueue(5);
         c2.enqueue(6);
         oc.ordenarQueue(c1, c2);
         
