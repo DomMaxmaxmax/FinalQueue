@@ -29,15 +29,16 @@ public class OrdenarClasse {
         int[] ftemp = new int[c1.size() + c2.size()];
         int iterator = 0;
         if(c1.size() == 0){
-            throw new NullPointerException("Queue Vazia");
+            throw new NullPointerException("Queue 1 Vazia");
         }else{
+        if(c2.size() == 0){
+            throw new NullPointerException("Queue 2 Vazia");
+        }
         for(int i=0 ; i<c1.size() ; i++){
-            temp[i] = c1.first();
-            c1.dequeue();
+            temp[i] = c1.dequeue();
         }
         for(int j=0 ; j<c2.size() ; j++){
-            temp2[j] = c2.first();
-            c2.dequeue();
+            temp2[j] = c2.dequeue();
         }
         
         for(int k = 0; k<c1.size(); k++){
